@@ -3,7 +3,7 @@
 /* interval between updates (in ms) */ const unsigned int interval = 15000;
 
 /* text to show if no value can be retrieved */
-static const char unknown_str[] = "100";
+static const char unknown_str[] = "n/a";
 
 /* maximum output string length */
 #define MAXLEN 2048
@@ -65,6 +65,6 @@ static const char unknown_str[] = "100";
 static const struct arg args[] = {
 	/* function format          argument */
 	//{ wifi_essid, " 󰖩 %s | ",           "wlan0" },
-	{ battery_perc, "  %s%% ",           "BAT0" },
-	{ datetime, "%s",           " %a %b %d %Y  %I:%M%p  " },
+	//{ battery_perc, "  %s%% ",           "BAT0" },
+	{ datetime, "  100%%  %s  ",           "%a %b %d %Y  %I:%M%p" },
 };
